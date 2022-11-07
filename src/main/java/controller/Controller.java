@@ -79,6 +79,7 @@ public class Controller implements Initializable {
 			email.send();
 			
 			Alert alertCon = new Alert(AlertType.CONFIRMATION);
+			alertCon.initOwner(app.primaryStage);
 			alertCon.setHeaderText("Mensaje enviado con éxito a '"+  destinatarioTextField.getText()  +"'.");
 			alertCon.show();
 			
@@ -88,6 +89,7 @@ public class Controller implements Initializable {
 		} catch (EmailException | NumberFormatException e) {			
 			
 			Alert alertErr = new Alert(AlertType.ERROR);
+			alertErr.initOwner(app.primaryStage);
 			alertErr.setHeaderText("No se pudo enviar el email.");
 			alertErr.setContentText("Invalid message supplied");
 			alertErr.show();
