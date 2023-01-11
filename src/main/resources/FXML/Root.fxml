@@ -39,7 +39,7 @@
       <TextField fx:id="destinatarioTextField" promptText="Email del destinatario" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
       <TextField fx:id="asuntoTextField" promptText="Asunto del mensaje" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4" />
       <TextField fx:id="puertoTextField" promptText="Puerto" GridPane.columnIndex="3" />
-      <Button defaultButton="true" mnemonicParsing="false" onAction="#onEnviar" text="Enviar" GridPane.columnIndex="4" />
+      <Button fx:id="enviarButton" defaultButton="true" mnemonicParsing="false" onAction="#onEnviar" text="Enviar" GridPane.columnIndex="4" />
       <Button mnemonicParsing="false" onAction="#onVaciar" text="Vaciar" GridPane.columnIndex="4" GridPane.rowIndex="1" />
       <Button mnemonicParsing="false" onAction="#onCerrar" text="Cerrar" GridPane.columnIndex="4" GridPane.rowIndex="2" />
       <PasswordField fx:id="passwordField" promptText="Contraseña" GridPane.columnIndex="3" GridPane.rowIndex="2" />
